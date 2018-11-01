@@ -1,0 +1,3 @@
+# Large file ignoring
+files/notebook/*.h5
+files/notebook/model.h5
