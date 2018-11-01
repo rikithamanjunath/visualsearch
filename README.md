@@ -13,11 +13,15 @@ run build.sh
 ![visualsearch](https://github.com/rikithamanjunath/visualsearch/blob/master/image_pipeline.png)
 ![visualsearch](https://github.com/rikithamanjunath/visualsearch/blob/master/docker_images.png)
 ### RUN
-```text
-run deploy.sh
+```bash
+sh deploy.sh
+```
+### Kill and Remove dead components
+```bash
+sh cleanAll.sh
 ```
 ### Free disk space
-```text
+```bash
 docker rmi $(docker images -q)
 ```
 ### References
