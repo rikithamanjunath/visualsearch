@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    supermonk-webapp:
+        container_name: visualsearch_rikitha
+        image: sjsu/spring/2019/295:visualsearch
+        ports:
+            - 8888:8888
+        volumes:
+             - "./files:/visual"
+        command: "/bin/bash -c /opt/conda/bin/conda install jupyter -y --quiet && mkdir /opt/notebooks && /opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser --allow-root"
