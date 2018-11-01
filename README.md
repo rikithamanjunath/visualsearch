@@ -1,9 +1,5 @@
 
 ## Image Build and Deployment for 295A Project
-### Build Step
-````text
-run build.sh
-````
 #### Detail of Building Image
 ```
 1. Take base debian image with python 3.5 which is called Jessie provided by opensource (FROM python:3.6.6-jessie)
@@ -12,6 +8,10 @@ run build.sh
 ```
 ![visualsearch](https://github.com/rikithamanjunath/visualsearch/blob/master/image_pipeline.png)
 ![visualsearch](https://github.com/rikithamanjunath/visualsearch/blob/master/docker_images.png)
+### Build Step
+````bash
+sh build.sh
+````
 ### RUN
 ```bash
 sh deploy.sh
