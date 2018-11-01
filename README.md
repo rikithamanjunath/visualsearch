@@ -12,7 +12,7 @@
 ````bash
 sh build.sh
 ````
-### RUN
+### Run
 ```bash
 sh deploy.sh
 ```
