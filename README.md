@@ -64,9 +64,9 @@ docker rmi $(docker images -q)
 1. Add the query image (input image) in the query_images folder. 
    Give the correct file name and file path in the scripts
 
-2. Using CNN_Integration.ipynb , the query image is predicted to three categories 
+2. Using CNN_Integration.ipynb , the query image is predicted to top 3 categories 
 
-3. Features of each model for each category is saved in pickle runnning by running them for first time
+3. Features of each model for each category is saved in pickle files by running it once and reusing them for the rest of the images
 
 3. These three categories, and its respective features stored in pickle files are given in the MobileNet_Image_Similarity.pynb 
    to provide same and similar images
