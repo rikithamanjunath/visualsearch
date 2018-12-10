@@ -65,7 +65,7 @@ docker rmi $(docker images -q)
 #### Steps
 ##### Final approach : 
 ##### 1. Image classification using CNN  
-##### 2. Feature extraction using Pre trained CNN algorithms 
+##### 2. Feature extraction using Pre trained CNN algorithms : MobileNet 
 ##### 3. Calculation of Image Similarity using Cosine distance
 ```
 1. Add the query image (input image) in the files --> query_images folder. 
