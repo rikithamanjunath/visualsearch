@@ -49,11 +49,13 @@ docker rmi $(docker images -q)
     (iv) Feature extraction using Pre trained CNN algorithms 
             and calculation of Image Similarity
             
-3. Query images are files --> query_images folder
+3. Features of all the models are extracted and saved in pickle files (files --> pickle_files)
 
-4. Semi_images is the subset of the main dataset
+4. Query images are files --> query_images folder
 
-4. Semi_train and Semi_test are train and test datasets
+5. Semi_images is the subset of the main dataset
+
+6. Semi_train and Semi_test are the train and test datasets
 
 
 ```
@@ -61,14 +63,18 @@ docker rmi $(docker images -q)
 ##### Final approach : 
 ##### Image classification using CNN and Feature extraction using Pre trained CNN algorithms and calculation of Image Similarity
 ```
-1. Add the query image (input image) in the query_images folder. 
-   Give the correct file name and file path in the scripts
+1. Add the query image (input image) in the files --> query_images folder. 
 
-2. Using CNN_Integration.ipynb , the query image is predicted to three categories 
+2. Give the correct file name and file path of the query image in CNN_Integration.ipynb (/visual/files/query_image)
+    Depending on the query image, three categories are predicted 
 
-3. Features of each model for each category is saved in pickle runnning by running them for first time
+3. Features of each model for each category is saved in pickle files by running them once.
+   The features of the respective predicted categories which are stored in the pickle files are used in the MobileNet_Image_Similarity.pynb 
+   to provide same and similar images.
+   
+   Give the pickle file path of the predicted 3 categories (/visual/files/pickle_files/Features_PreTrained/categoryname/algorithm/feature.pck) 
 
-3. These three categories, and its respective features stored in pickle files are given in the MobileNet_Image_Similarity.pynb 
-   to provide same and similar images
+4. Run the MobileNet_Image_Similarity.pynb to get similar recommendation images depending on the query image.
 
+   
 ```
