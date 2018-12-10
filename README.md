@@ -64,17 +64,15 @@ docker rmi $(docker images -q)
 ##### Image classification using CNN and Feature extraction using Pre trained CNN algorithms and calculation of Image Similarity
 ```
 1. Add the query image (input image) in the files --> query_images folder. 
+    Path of the query images : /visual/files/query_images/queryfile.jpg
 
-2. Give the correct file name and file path of the query image in CNN_Integration.ipynb (/visual/files/query_image)
+2. Give the correct file name and file path of the query image in CNN_Integration.ipynb 
     Depending on the query image, three categories are predicted 
 
 3. Features of each model for each category is saved in pickle files by running them once.
-   The features of the respective predicted categories which are stored in the pickle files are used in the MobileNet_Image_Similarity.pynb 
-   to provide same and similar images.
+   Give the pickle file path of the predicted 3 categories (/visual/files/pickle_files/Features_PreTrained/categoryname/algorithm/feature.pck)  
    
-   Give the pickle file path of the predicted 3 categories (/visual/files/pickle_files/Features_PreTrained/categoryname/algorithm/feature.pck) 
-
-4. Run the MobileNet_Image_Similarity.pynb to get similar recommendation images depending on the query image.
-
+4. The features of the respective predicted categories which are stored in the pickle files are used in the MobileNet_Image_Similarity.pynb (path : files/notebook/ImageSimilarity-Pretrained/MobileNet_Image_Similarity.pynb) 
+   to get same and similar images. 
    
 ```
