@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be3e2e75-5109-44cc-81a0-33cafe562ca9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/files/notebook/ImageSimilarity_KAZE.ipynb" afterPath="$PROJECT_DIR$/files/notebook/ImageSimilarity-ComputerVision/ImageSimilarity_KAZE.ipynb" />
-      <change beforePath="$PROJECT_DIR$/files/notebook/ImageSimilarity_SIFT.ipynb" afterPath="$PROJECT_DIR$/files/notebook/ImageSimilarity-ComputerVision/ImageSimilarity_SIFT.ipynb" />
-      <change beforePath="$PROJECT_DIR$/files/notebook/ImageSimilarity_SURF.ipynb" afterPath="$PROJECT_DIR$/files/notebook/ImageSimilarity-ComputerVision/ImageSimilarity_SURF.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="428">
-                <caret line="75" column="35" lean-forward="false" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
+              <first_editor relative-caret-position="231">
+                <caret line="52" column="12" lean-forward="false" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -305,8 +301,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="428">
-            <caret line="75" column="35" lean-forward="false" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
+          <first_editor relative-caret-position="231">
+            <caret line="52" column="12" lean-forward="false" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
             <folding />
           </first_editor>
           <second_editor />

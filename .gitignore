@@ -2,4 +2,5 @@
 files/notebook/*.h5
 files/notebook/model.h5
 files/notebook/.ipynb_checkpoints
+files/pickle_files/Features_CV/Chiffon/SURF/features.pck
 .idea/*

@@ -41,13 +41,16 @@ docker rmi $(docker images -q)
 1. All the input files are mounted in the files folder
    All the jupyter notebook files and the input files are in files folder
 
-2. Jupyter notebook files are in files --> notebook folder
+2. Jupyter notebook files are in path (files/notebook)
     (i)  Image classification using CNN
+            Path : files/notebook/CNN
     (ii) Image classification using Pre trained CNN models
-    (ii) Feature extraction using Computer Vision algorithms 
-            and calculation of Image Similarity
-    (iv) Feature extraction using Pre trained CNN algorithms 
-            and calculation of Image Similarity
+            Path : files/notebook/PretrainedCNN
+    (ii) Feature extraction using Computer Vision algorithms and calculation of Image Similarity
+            Path : files/notebook/ImageSimilarity-ComputerVision
+    (iv) Feature extraction using Pre trained CNN algorithms and calculation of Image Similarity
+            Path : files/notebook/ImageSimilarity-Pretrained
+            
             
 3. Features of all the models are extracted and saved in pickle files (files --> pickle_files)
 
