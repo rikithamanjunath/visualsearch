@@ -64,7 +64,9 @@ docker rmi $(docker images -q)
 ```
 #### Steps
 ##### Final approach : 
-##### Image classification using CNN and Feature extraction using Pre trained CNN algorithms and calculation of Image Similarity
+##### 1. Image classification using CNN  
+##### 2. Feature extraction using Pre trained CNN algorithms 
+##### 3. Calculation of Image Similarity using Cosine distance
 ```
 1. Add the query image (input image) in the files --> query_images folder. 
     Path of the query images : /visual/files/query_images/queryfile.jpg
