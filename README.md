@@ -5,8 +5,8 @@
 2. Add Anaconda (https://github.com/rikithamanjunath/visualsearch/blob/master/docker-anaconda/Dockerfile)
 3. Add TensorFlow and other pip installations (https://github.com/rikithamanjunath/visualsearch/blob/master/docker-visualsearch/Dockerfile)
 ```
-![visualsearch](https://github.com/rikithamanjunath/visualsearch/blob/master/image_pipeline.png)
-![visualsearch](https://github.com/rikithamanjunath/visualsearch/blob/master/docker_images.png)
+![visualsearch](image_pipeline.png)
+![visualsearch](docker_images.png)
 
 ### Install Docker
 ````
@@ -62,10 +62,10 @@ docker rmi $(docker images -q)
    Path : files/notebook/Final Model/MobileNet_Image_Similarity.ipynb 
 
     To get the final image recommendations, you have to load the MobileNet_Image_Similarity.ipynb and do the following steps
-    Change the "category list" in the code to the predicted category list you got at the end of CNN_Integration.ipynb script.
-    Download the semi train dataset from /visual/files/images/Semi_train and Change the path in script.
-    Change the pickled_db_path to the feature_mnet folder you got after downloading the pickle files.
-    Change the path of the query image similar to what you gave in CNN_Integration.ipynb script.
+    (i)   Change the "category list" in the code to the predicted category list you got at the end of CNN_Integration.ipynb script.
+    (ii)  Download the semi train dataset from /visual/files/images/Semi_train and Change the path in script.
+    (iii) Change the pickled_db_path to the feature_mnet folder you got after downloading the pickle files.
+    (iv)  Change the path of the query image similar to what you gave in CNN_Integration.ipynb script.
 ```
 #### All the model training scripts details are given in the below section: 
 
