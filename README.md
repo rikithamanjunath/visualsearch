@@ -1,4 +1,3 @@
-
 ## Image Build and Deployment for 295A Project
 #### Detail of Building Image
 ```
@@ -35,7 +34,40 @@ docker rmi $(docker images -q)
 
 ## Application ReadMe
 
-#### Application files
+#### To test the code and get image recommendations for a query image, you can follow the steps given below:
+
+
+#### Steps
+##### Final approach : 
+##### 1. Image classification using CNN  
+##### 2. Feature extraction using Neural Networks : MobileNet 
+##### 3. Calculation of Image Similarity using Cosine distance
+
+```
+
+1. You can pick one of the query image (input image) from the path below and download it to your local system. 
+   Path of the query images : /visual/files/images/query_images/queryfile.jpg
+
+2. To run the Category prediction step, load the CNN_Integration.ipynb from the below path:
+   Path : /visual/files/notebook/Final Model/CNN_Integration.ipynb
+
+    Download the json model and h5 file from the link: https://drive.google.com/drive/folders/1cPwrrkDKRZ8AGGcL1hZBS6eXoEPZZpZO?usp=sharing
+    Once the download is done, change the path of the json_model, model.h5 file, query image to your local file path
+    Once you run the cnn script, three categories for the query image are predicted. 
+
+3. You have to download the pickle files from the link:https://drive.google.com/drive/folders/1cPwrrkDKRZ8AGGcL1hZBS6eXoEPZZpZO?usp=sharing
+ 
+   
+4. The features of the respective predicted categories which are stored in the pickle files are used in the MobileNet_Image_Similarity.ipynb which can be downloaded from the below path:
+   Path : files/notebook/Final Model/MobileNet_Image_Similarity.ipynb 
+
+    To get the final image recommendations, you have to load the MobileNet_Image_Similarity.ipynb and do the following steps
+    Change the "category list" in the code to the predicted category list you got at the end of CNN_Integration.ipynb script.
+    Download the semi train dataset from /visual/files/images/Semi_train and Change the path in script.
+    Change the pickled_db_path to the feature_mnet folder you got after downloading the pickle files.
+    Change the path of the query image similar to what you gave in CNN_Integration.ipynb script.
+```
+#### All the model training scripts details are given in the below section: 
 
 ```
 1. All the input files are mounted in the files folder
@@ -56,26 +88,8 @@ docker rmi $(docker images -q)
 
 4. Query images are files --> query_images folder
 
-5. Semi_images is the subset of the main dataset
+5. Semi_images is the subset of the main dataset we used to train the models.
 
 6. Semi_train and Semi_test are the train and test datasets
 
-
-```
-#### Steps
-##### Final approach : 
-##### Image classification using CNN and Feature extraction using Pre trained CNN algorithms and calculation of Image Similarity
-```
-1. Add the query image (input image) in the files --> query_images folder. 
-    Path of the query images : /visual/files/query_images/queryfile.jpg
-
-2. Give the correct file name and file path of the query image in CNN_Integration.ipynb 
-    Depending on the query image, three categories are predicted 
-
-3. Features of each model for each category is saved in pickle files by running them once.
-   Give the pickle file path of the predicted 3 categories (/visual/files/pickle_files/Features_PreTrained/categoryname/algorithm/feature.pck)  
-   
-4. The features of the respective predicted categories which are stored in the pickle files are used in the MobileNet_Image_Similarity.pynb (path : files/notebook/ImageSimilarity-Pretrained/MobileNet_Image_Similarity.pynb) 
-   to get same and similar images. 
-   
 ```
