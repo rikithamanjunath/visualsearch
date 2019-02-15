@@ -10,7 +10,7 @@
 
 ### Install Docker
 ````
-https://docs.docker.com/v17.12/install/#supported-platforms
+(https://docs.docker.com/v17.12/install/#supported-platforms)
 ````
 ### Build Step
 ````bash
@@ -29,8 +29,8 @@ sh cleanAll.sh
 docker rmi $(docker images -q)
 ```
 ### References
-1. https://github.com/docker-library/python/blob/88812635c8ad7ff06a8a3755616a1040df222f3c/3.6/jessie/Dockerfile
-2. https://github.com/ContinuumIO/docker-images
+1. (https://github.com/docker-library/python/blob/88812635c8ad7ff06a8a3755616a1040df222f3c/3.6/jessie/Dockerfile)
+2. (https://github.com/ContinuumIO/docker-images)
 
 ## Application ReadMe
 
@@ -51,11 +51,11 @@ docker rmi $(docker images -q)
 2. To run the Category prediction step, load the CNN_Integration.ipynb from the below path:
    Path : /visual/files/notebook/Final Model/CNN_Integration.ipynb
 
-    Download the json model and h5 file from the link: https://drive.google.com/drive/folders/1cPwrrkDKRZ8AGGcL1hZBS6eXoEPZZpZO?usp=sharing
+    Download the json model and h5 file from the link: (https://drive.google.com/drive/folders/1cPwrrkDKRZ8AGGcL1hZBS6eXoEPZZpZO?usp=sharing)
     Once the download is done, change the path of the json_model, model.h5 file, query image to your local file path
     Once you run the cnn script, three categories for the query image are predicted. 
 
-3. You have to download the pickle files from the link:https://drive.google.com/drive/folders/1cPwrrkDKRZ8AGGcL1hZBS6eXoEPZZpZO?usp=sharing
+3. You have to download the pickle files from the link:(https://drive.google.com/drive/folders/1cPwrrkDKRZ8AGGcL1hZBS6eXoEPZZpZO?usp=sharing)
  
    
 4. The features of the respective predicted categories which are stored in the pickle files are used in the MobileNet_Image_Similarity.ipynb which can be downloaded from the below path:
