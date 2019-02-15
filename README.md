@@ -29,8 +29,8 @@ sh cleanAll.sh
 docker rmi $(docker images -q)
 ```
 ### References
-1. (https://github.com/docker-library/python/blob/88812635c8ad7ff06a8a3755616a1040df222f3c/3.6/jessie/Dockerfile)
-2. (https://github.com/ContinuumIO/docker-images)
+1. [https://github.com/docker-library/python/blob/88812635c8ad7ff06a8a3755616a1040df222f3c/3.6/jessie/Dockerfile]
+2. [https://github.com/ContinuumIO/docker-images]
 
 ## Application ReadMe
 
