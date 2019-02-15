@@ -8,9 +8,10 @@
 ![visualsearch](image_pipeline.png)
 ![visualsearch](docker_images.png)
 
-### <Install Docker> : 
-(https://docs.docker.com/v17.12/install/#supported-platforms)
+### Install Docker
 ````
+<>: (https://docs.docker.com/v17.12/install/#supported-platforms)
+
 ````
 ### Build Step
 ````bash
