@@ -10,7 +10,7 @@
 
 ### Install Docker
 ````
-(https://docs.docker.com/v17.12/install/#supported-platforms)
+<https://docs.docker.com/v17.12/install/#supported-platforms>
 ````
 ### Build Step
 ````bash
@@ -51,7 +51,7 @@ docker rmi $(docker images -q)
 2. To run the Category prediction step, load the CNN_Integration.ipynb from the below path:
    Path : /visual/files/notebook/Final Model/CNN_Integration.ipynb
 
-    Download the json model and h5 file from the link: <https://drive.google.com/drive/folders/1cPwrrkDKRZ8AGGcL1hZBS6eXoEPZZpZO?usp=sharing>
+    Download the json model and h5 file from the link:<https://drive.google.com/drive/folders/1cPwrrkDKRZ8AGGcL1hZBS6eXoEPZZpZO?usp=sharing>
     Once the download is done, change the path of the json_model, model.h5 file, query image to your local file path
     Once you run the cnn script, three categories for the query image are predicted. 
 
